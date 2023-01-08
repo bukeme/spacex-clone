@@ -8,9 +8,93 @@
 </head>
 <body>
 	<nav>
-		<img src="img/logo.png">
+		<div class="nav__logo-container">
+			<img src="img/logo.png" class="nav__logo-container--logo">
+		</div>
+		<div class="nav__nav-items-container">
+			<a href="#" class="nav__nav-items-container--nav-item">Falcon 9</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Falcon Heavy</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Dragon</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Starship</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Human Spaceflight</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Rideshare</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Starshield</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Starlink</a>
+			<a href="#" class="nav__nav-items-container--nav-item">Shop</a>
+			<div class="nav__nav-items-container--hamburger-container">
+				<div class="nav__nav-items-container--hamburger-container__hamburger"></div>
+			</div>
+		</div>
+		<div class="nav__menu">
+			<a href="#" class="nav__menu--menu-item mobile">Falcon 9</a>
+			<a href="#" class="nav__menu--menu-item mobile">Falcon Heavy</a>
+			<a href="#" class="nav__menu--menu-item mobile">Dragon</a>
+			<a href="#" class="nav__menu--menu-item mobile">Starship</a>
+			<a href="#" class="nav__menu--menu-item mobile">Human Spaceflight</a>
+			<a href="#" class="nav__menu--menu-item mobile">Rideshare</a>
+			<a href="#" class="nav__menu--menu-item mobile">Starshield</a>
+			<a href="#" class="nav__menu--menu-item mobile">Starlink</a>
+			<a href="#" class="nav__menu--menu-item visible">Mission</a>
+			<a href="#" class="nav__menu--menu-item visible">Launches</a>
+			<a href="#" class="nav__menu--menu-item visible">Career</a>
+			<a href="#" class="nav__menu--menu-item visible">Updates</a>
+			<a href="#" class="nav__menu--menu-item visible">Shop</a>
+		</div>
+		<div class="nav__overlay"></div>
 	</nav>
+	<main>
+		<section id="section-a">
+			<div class="section-a__content animate-content">
+				<p class="section-a__content--para animate-para">UPCOMING LAUNCH</p>
+				<h2 class="section-a__content--heading animate-heading">ONEWEB LAUNCH 16 MISSION</h2>
+				<button class="section-a__content--button animate-button">WATCH</button>
+			</div>
+			<svg width="30px" height="20px" class='section-a__svg'>
+		      <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+		    </svg>
+		</section>
+		<section id="section-b">
+			<div class="section-b__content animate-content">
+				<p class="section-b__content--para animate-para">UPCOMING LAUNCH</p>
+				<h2 class="section-b__content--heading animate-heading">STARLINK MISSION</h2>
+				<button class="section-b__content--button animate-button">WATCH</button>
+			</div>
+			<svg width="30px" height="20px" class='section-b__svg'>
+		      <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+		    </svg>
+		</section>
+		<section id="section-c">
+			<div class="section-c__content animate-content">
+				<h2 class="section-c__content--heading animate-heading">STARSHIP SELECTED BY NASA TO SUPPORT SUSTAINED LUNAR EXPLORATION</h2>
+				<button class="section-c__content--button animate-button">LEARN MORE</button>
+			</div>
+			<svg width="30px" height="20px" class='section-c__svg'>
+		      <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+		    </svg>
+		</section>
+		<section id="section-d">
+			<div class="section-d__content animate-content">
+				<h2 class="section-d__content--heading animate-heading">STARSHIP UPDATE</h2>
+				<button class="section-d__content--button animate-button">LEARN MORE</button>
+			</div>
+		</section>
+	</main>
 
-	<script src="js/script.js"></script>
+	<script defer src="js/script.js"></script>
 </body>
 </html>
