@@ -204,34 +204,72 @@ section {
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	height: 100vh;
-	min-height: 60rem;
+	min-height: 100vh;
+	/*min-height: 65rem;*/
 	padding: 0 4.8rem;
+	overflow: hidden;
 }
 
 section#section-a {
 	background-image: url('../img/home/section-a__desktop.jpg');
 }
 
-.section-a__content {
-	position: relative;
-	top: 40rem;
-	color: white;
-	max-width: 40rem;
+section#section-b {
+	background-image: url('../img/home/section-b__desktop.jpg');
 }
 
-.section-a__content--para {
+section#section-c {
+	background-image: url('../img/home/section-c__desktop.webp');
+}
+
+section#section-d {
+	background-image: url('../img/home/section-d__desktop.webp');
+}
+
+.section-a__content,
+.section-b__content,
+.section-c__content,
+.section-d__content {
+	/*position: relative;*/
+	/*left: 4.8rem;*/
+	padding: 30rem 0 5rem;
+	color: white;
+	max-width: 50rem;
+}
+
+.section-a__content--para,
+.section-b__content--para {
 	font-size: calc(1.6rem + 0.31vw);
 	/*font-weight: 500;*/
 	font-family: Barlow;
+	position: relative;
+	/*top: 3rem;*/
+	/*animation: section-a 0.4s ease-in-out;
+	animation-fill-mode: both;*/
+	top: 4rem;
+	opacity: 0;
+	transition: all 0.35s ease-in-out;
 }
 
-.section-a__content--heading {
+.section-a__content--heading,
+.section-b__content--heading,
+.section-c__content--heading,
+.section-d__content--heading {
 	font-size: calc(3rem + 1.38vw);
 	font-family: Barlow;
+	position: relative;
+	/*top: 3rem;*/
+	/*animation: section-a 0.4s ease-in-out 0.2s;
+	animation-fill-mode: both;*/
+	top: 4rem;
+	opacity: 0;
+	transition: all 0.35s ease-in-out;
 }
 
-.section-a__content--button {
+.section-a__content--button,
+.section-b__content--button,
+.section-c__content--button,
+.section-d__content--button {
 	border: 2px solid white;
 	padding: 1.8rem;
 	background-color: transparent;
@@ -243,14 +281,46 @@ section#section-a {
 	cursor: pointer;
 	position: relative;
 	z-index: 1;
+	/*transition: all 0.35s ease-in-out;*/
+	position: relative;
+	/*top: 3rem;*/
+	/*animation: section-a 0.4s ease-in-out 0.4s;
+	animation-fill-mode: both;*/
+	top: 4rem;
+	opacity: 0;
 	transition: all 0.35s ease-in-out;
 }
 
-.section-a__content--button:hover {
+.fade-in .animate-para,
+.fade-in .animate-heading,
+.fade-in .animate-button {
+	opacity: 1;
+	top: 0;
+}
+
+/*@keyframes section-a {
+	0% {
+		top: 5rem;
+		opacity: 0;
+	}
+
+	100% {
+		top: 0rem;
+		opacity: 1;
+	}
+}*/
+
+.section-a__content--button:hover,
+.section-b__content--button:hover,
+.section-c__content--button:hover,
+.section-d__content--button:hover {
 	color: black;
 }
 
-.section-a__content--button::after {
+.section-a__content--button::after,
+.section-b__content--button::after,
+.section-c__content--button::after,
+.section-d__content--button::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -264,9 +334,40 @@ section#section-a {
 	transition: transform 0.35s ease-in-out;
 }
 
-.section-a__content--button:hover::after {
+.section-a__content--button:hover::after,
+.section-b__content--button:hover::after,
+.section-c__content--button:hover::after,
+.section-d__content--button:hover::after {
 	transform: scaleY(1.0);
 	transform-origin: bottom;
+}
+
+.section-a__svg,
+.section-b__svg,
+.section-c__svg {
+	background-color: transparent;
+	position: absolute;
+	bottom: 3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: section-svg 5s ease-in-out infinite;
+}
+
+
+@keyframes section-svg {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		opacity: 0;
+		bottom: 3.5rem;
+	}
+
+	40% {
+		opacity: 1;
+		bottom: 3rem;
+	}
 }
 
 @media screen and (max-width: 1180px) {
