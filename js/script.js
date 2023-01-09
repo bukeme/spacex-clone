@@ -4,6 +4,8 @@ const navMenuItems = document.querySelectorAll('.nav__menu--menu-item');
 const navMenuItemsMobile = document.querySelectorAll('.nav__menu--menu-item.mobile');
 const navOverlay = document.querySelector('.nav__overlay');
 const animateContents = document.querySelectorAll('.animate-content');
+const nav = document.querySelector('nav')
+const sectionA = document.querySelector('#section-a')
 
 
 
@@ -13,7 +15,7 @@ hamburgerContainer.addEventListener('click', function() {
 	navOverlay.classList.toggle('show-overlay');
 });
 
-const addTransitionDelay = () => document.querySelectorAll('.visible').forEach((navMenuItem, index) => navMenuItem.style.transitionDelay = `${(index * 0.05) + 0.1}s`);
+const addTransitionDelay = () => document.querySelectorAll('.visible').forEach((navMenuItem, index) => navMenuItem.style.transitionDelay = `${(index * 0.04) + 0.1}s`);
 
 if (this.innerWidth <= 1150) navMenuItemsMobile.forEach((navMenuItemMobile) => navMenuItemMobile.classList.add('visible'));
 addTransitionDelay();
@@ -52,8 +54,31 @@ function fadeInAnimateContent() {
 	});
 }
 
-fadeInAnimateContent()
+let previousScrollPosition = 0;
+function isScrollingDown() {
+	let goingDown = false;
+	let currentScrollPosition = window.scrollY;
+	if (previousScrollPosition < currentScrollPosition) goingDown = true;
+	previousScrollPosition = currentScrollPosition
+	return goingDown
+}
+
+const sectionAHeight = window.innerHeight - 50;
+
+fadeInAnimateContent();
 
 window.addEventListener('scroll', function() {
-	fadeInAnimateContent()
+	fadeInAnimateContent();
+	if (isScrollingDown()) {
+		nav.classList.add('hide-nav');
+	} else {
+		nav.classList.remove('hide-nav');
+	};
+
+	if (window.scrollY >= sectionAHeight) {
+		nav.classList.add('add-background')
+	} else {
+		nav.classList.remove('add-background')
+	}
 });
+
