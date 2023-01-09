@@ -63,7 +63,7 @@ function isScrollingDown() {
 	return goingDown
 }
 
-const sectionAHeight = sectionA.getBoundingClientRect().height - 50;
+const sectionAHeight = window.innerHeight - 50;
 
 fadeInAnimateContent();
 

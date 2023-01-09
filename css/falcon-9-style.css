@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Familjen+Grotesk:wght@400;500;600;700&display=swap');
+
+section#falcon-9-section-a {
+	background-image: url('../img/falcon-9/section-a__desktop.jpg');
+	animation: fade-in-section-a 0.35s ease;
+}
+
+@keyframes fade-in-section-a {
+	0% {
+		background-image: linear-gradient(black, black);
+	}
+
+	100% {
+		background-image: url('../img/falcon-9/section-a__desktop.jpg');
+	}
+}
+
+.falcon-9-section-a__content {
+	padding: 19rem 0 5rem;
+	margin: auto;
+	visibility: visible;
+}
+
+.falcon-9-section-a__content--title,
+.falcon-9-section-b__stats--item__title {
+	font-size: calc(5rem + 3.08vw);
+	font-family: 'Familjen Grotesk';
+}
+
+.falcon-9-section-a__content--para,
+.falcon-9-section-b__stats--item__para {
+	margin-top: 1.5rem;
+}
+
+.falcon-9-section-a__content--title,
+.falcon-9-section-a__content--para {
+	text-align: center;
+	animation: section-a 0.4s ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes section-a {
+	0% {
+		top: 5rem;
+		opacity: 0;
+	}
+
+	100% {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+.falcon-9-section-b__stats {
+	max-width: 80rem;
+	margin: auto;
+	padding: 5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.falcon-9-section-b__stats--item__title {
+	font-size: 12rem;
+	font-weight: 400;
+	font-family: Barlow;
+}
+
+.falcon-9-section-b__stats--item__title,
+.falcon-9-section-b__stats--item__para {
+	opacity: 1;
+	color: white;
+}
