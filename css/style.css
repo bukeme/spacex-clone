@@ -30,29 +30,32 @@ a {
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	padding: 3.4rem 4.8rem;
-	align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 2;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 3.4rem 4.8rem;
+	align-items: center;
 	transform-origin: top;
 	transition: all 0.35s ease;
 	background-color: transparent;
 }
 
-nav.hide-nav {
+.nav.hide-nav {
 	transform: scaleY(0);
 }
 
-nav.hide-nav .nav__nav-items-container--nav-item {
+.nav.hide-nav .nav__nav-items-container--nav-item {
 	opacity: 0;
 }
 
-nav.add-background {
+.nav.add-background {
 	background-color: black;
 }
 
@@ -409,13 +412,13 @@ footer {
 }
 
 @media screen and (max-width: 1180px) {
-	nav {
+	.nav {
 		padding: 3.4rem 3rem;
 	}
 }
 
 @media screen and (max-width: 1150px) {
-	nav {
+	.nav {
 		padding-top: 2rem;
 		justify-content: center;
 		/*background-color: black;*/
@@ -467,7 +470,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-	nav {
+	.nav {
 		padding: 2rem 2rem;
 	}
 	section {
