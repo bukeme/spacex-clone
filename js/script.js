@@ -4,7 +4,7 @@ const navMenuItems = document.querySelectorAll('.nav__menu--menu-item');
 const navMenuItemsMobile = document.querySelectorAll('.nav__menu--menu-item.mobile');
 const navOverlay = document.querySelector('.nav__overlay');
 const animateContents = document.querySelectorAll('.animate-content');
-const nav = document.querySelector('nav')
+const nav = document.querySelector('.nav')
 const sectionA = document.querySelector('#section-a')
 
 
@@ -70,6 +70,9 @@ fadeInAnimateContent();
 window.addEventListener('scroll', function() {
 	fadeInAnimateContent();
 	if (isScrollingDown()) {
+		navMenu.classList.remove('open');
+		navOverlay.classList.remove('show-overlay');
+		hamburgerContainer.classList.remove('active');
 		nav.classList.add('hide-nav');
 	} else {
 		nav.classList.remove('hide-nav');

@@ -52,16 +52,20 @@ section#falcon-9-section-a {
 }
 
 .falcon-9-section-b__stats {
-	max-width: 80rem;
-	margin: auto;
-	padding: 5rem 0;
+	/*max-width: 80rem;*/
+	/*margin: auto;*/
+	margin: 3rem 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
+.falcon-9-section-b__stats--item {
+	margin: 0 calc(3rem + 2.31vw);
+}
+
 .falcon-9-section-b__stats--item__title {
-	font-size: 12rem;
+	font-size: calc(7rem + 4.62vw);
 	font-weight: 400;
 	font-family: Barlow;
 }
@@ -70,4 +74,20 @@ section#falcon-9-section-a {
 .falcon-9-section-b__stats--item__para {
 	opacity: 1;
 	color: white;
+	text-align: center;
+	position: initial;
+}
+
+@media screen and (max-width: 960px) {
+	.falcon-9-section-b__stats--item {
+		margin: 0 calc(1.5rem + 1.15vw);
+	}
+
+	.falcon-9-section-b__stats--item__para {
+		font-size: calc(1.3rem + 0.23vw);
+	}
+
+	.falcon-9-section-b__stats--item__title {
+		font-size: calc(3rem + 2.31vw);
+	}
 }
