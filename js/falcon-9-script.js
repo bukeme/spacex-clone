@@ -1,6 +1,7 @@
-const firstSection = document.querySelector('section')
-const stats = document.querySelector('.falcon-9-section-b__stats')
-const statsTitle = document.querySelectorAll('.falcon-9-section-b__stats--item__title')
+const firstSection = document.querySelector('section');
+const stats = document.querySelector('.falcon-9-section-b__stats');
+const statsTitle = document.querySelectorAll('.falcon-9-section-b__stats--item__title');
+const overviewCarouselList = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item');
 
 
 
@@ -9,7 +10,7 @@ const statsTitle = document.querySelectorAll('.falcon-9-section-b__stats--item__
 
 function allowCount() {
 	const statsTop = stats.getBoundingClientRect().top;
-	const statsHeight = stats.getBoundingClientRect().height 
+	const statsHeight = stats.getBoundingClientRect().height;
 	
 	statsTitle.forEach(function(title) {
 		if (statsTop <= window.innerHeight - 50 && statsTop > -(statsHeight-50)) {
@@ -31,5 +32,14 @@ function allowCount() {
 allowCount();
 
 window.addEventListener('scroll', function() {
-	allowCount()
+	allowCount();
 })
+
+function alignCarouselItems(list) {
+	const listItemWidth = list[0].getBoundingClientRect().width;
+	list.forEach(function(item, index) {
+		item.style.left = `${index * listItemWidth}px`;
+	});
+};
+
+alignCarouselItems(overviewCarouselList);
