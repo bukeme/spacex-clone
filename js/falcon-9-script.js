@@ -1,7 +1,10 @@
 const firstSection = document.querySelector('section');
 const stats = document.querySelector('.falcon-9-section-b__stats');
 const statsTitle = document.querySelectorAll('.falcon-9-section-b__stats--item__title');
-const overviewCarouselList = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item');
+const overviewCarouselList = document.querySelectorAll('.falcon-9-section-b__overview--carousel-1-container__carousel-1--item');
+const carousel_1_navLink_1 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item__nav-link')
+const carousel_1_content_1 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content')
+
 
 
 
@@ -43,3 +46,25 @@ function alignCarouselItems(list) {
 };
 
 alignCarouselItems(overviewCarouselList);
+
+
+
+function displayNavContent(navLinks, contents) {
+	navLinks.forEach(function(navLink) {
+		navLink.addEventListener('click', function() {
+			navLinks.forEach(function(link) {
+				link.classList.remove('active');
+			});
+			this.classList.add('active');
+			const content_id = this.dataset.content;
+			contents.forEach(function(content) {
+				content.classList.remove('show-content');
+			});
+			document.getElementById(content_id).classList.add('show-content');
+			const background = this.dataset.background;
+			this.parentElement.parentElement.parentElement.style.backgroundImage = `url('${background}')`
+		});
+	});
+};
+
+displayNavContent(carousel_1_navLink_1, carousel_1_content_1);
