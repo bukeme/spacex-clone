@@ -23,7 +23,7 @@ section#falcon-9-section-a {
 
 .falcon-9-section-a__content--title,
 .falcon-9-section-b__stats--item__title,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__title {
 	font-size: calc(5rem + 3.08vw);
 	font-family: 'Familjen Grotesk';
 }
@@ -84,7 +84,7 @@ section#falcon-9-section-a {
 .falcon-9-section-b__stats--item__para,
 .falcon-9-section-b__about--text,
 .falcon-9-section-b__overview p,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__title {
 	opacity: 1;
 	color: white;
 	text-align: center;
@@ -92,7 +92,7 @@ section#falcon-9-section-a {
 }
 
 .falcon-9-section-b__about,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item {
+.falcon-9-section-b__overview--carousel-container__carousel--item {
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: cover;
@@ -119,18 +119,18 @@ section#falcon-9-section-a {
 	color: white;
 }
 
-.falcon-9-section-b__overview--carousel-1-container {
+.falcon-9-section-b__overview--carousel-container {
 	height: inherit;
 	overflow: hidden;
 	position: relative;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel {
+.falcon-9-section-b__overview--carousel-container__carousel {
 	height: inherit;
-	transform: translateX(-2526px);
+	/*transform: translateX(-5052px);*/
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item {
+.falcon-9-section-b__overview--carousel-container__carousel--item {
 	height: inherit;
 	position: absolute;
 	bottom: 0;
@@ -146,48 +146,62 @@ section#falcon-9-section-a {
 	text-align: initial;
 	font-size: 1.5rem;
 	line-height: 1.8;
+	font-weight: 500;
 }
 
-.falcon-9-section-b__overview--carousel-1-container span {
+.falcon-9-section-b__overview--carousel-container span {
 	color: #868686;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__para {
+.falcon-9-section-b__overview--carousel-container__carousel--item__para,
+.falcon-9-section-b__overview--carousel-container__carousel--item__desc--title {
 	font-size: 1.8rem !important;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__title {
 	text-align: initial;
 	font-size: 4.5rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item > * {
+.falcon-9-section-b__overview--carousel-container__carousel--item > * {
 	max-width: 55rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__para--title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__para--title {
 	margin-bottom: 2rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__records--left__right p,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content__records--left__right {
+.falcon-9-section-b__overview--carousel-container__carousel--item__records--left__right p,
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right {
 	font-size: 1.4rem;
 	font-weight: 600;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__records--left__right,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content__records--left__right {
+.falcon-9-section-b__overview--carousel-container__carousel--item__records--left__right,
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right {
 	display: flex;
 	justify-content: space-between;
 	margin: 1.5rem 0;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item.carousel-1-item-1 {
+.falcon-9-section-b__overview--carousel-container__carousel--item.carousel-1-item-1 {
 	background-image: url('../img/falcon-9/carousel-1-background-1.jpg');
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item.carousel-1-item-2 {
+.falcon-9-section-b__overview--carousel-container__carousel--item.carousel-1-item-2 {
 	background-image: url('../img/falcon-9/carousel-1-background-2-1.jpg');
+}
+
+.falcon-9-section-b__overview--carousel-container__carousel--item.carousel-1-item-3 {
+	background-image: url('../img/falcon-9/carousel-1-background-3.jpg');
+}
+
+.falcon-9-section-b__overview--carousel-container__carousel--item.carousel-1-item-4 {
+	background-image: url('../img/falcon-9/carousel-1-background-4.jpg');
+}
+
+.falcon-9-section-b__overview--carousel-container__carousel--item.carousel-1-item-5 {
+	background-image: url('../img/falcon-9/carousel-1-background-5-1.jpg');
 }
 
 hr {
@@ -196,30 +210,30 @@ hr {
 	border-top: 1px solid #525254;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content {
 	display: none;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content.show-content {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.show-content {
 	display: block;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1 {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu {
 	display: flex;
 	margin: 2rem 0 3rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item {
 	padding: 0 1.2rem;
 	position: relative;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item:first-child {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item:first-child {
 	padding-left: 0;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item.carousel-1__nav-item-1-2::before,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item.carousel-1__nav-item-1-2::after {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::before,
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -229,45 +243,49 @@ hr {
 	background-color: #868686;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item.carousel-1__nav-item-1-2::before {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::before {
 	left: -0.1rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item.carousel-1__nav-item-1-2::after {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::after {
 	right: -0.1rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item__nav-link:link,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item__nav-link:visited {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:link,
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:visited {
 	color: #868686;
 	font-size: 1.8rem;
 	/*font-weight: 600;*/
 }
 
-.active.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item__nav-link:link,
-.active.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item__nav-link:visited {
+.active.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:link,
+.active.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:visited {
 	color: white;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content p {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content p {
 	margin-bottom: 1rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content__records.carousel-1__content-1-2,
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__records {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records,
+.falcon-9-section-b__overview--carousel-container__carousel--item__records {
 	margin-top: 2rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content__records--left__right {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records:last-child {
+	margin-top: 5rem;
+}
+
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right {
 	margin: 0.7rem 0;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content .carousel-1__content-1-3--link {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.content-1:last-child a {
 	position: relative;
 	padding-right: 1.3rem;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content .carousel-1__content-1-3--link svg {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.content-1:last-child a svg {
 	position: absolute;
 	top: 50%;
 	right: 0.5rem;
@@ -275,12 +293,16 @@ hr {
 	transition: all 0.3s ease-in-out;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content .carousel-1__content-1-3--link:hover svg {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.content-1:last-child a:hover svg {
 	right: 0;
 }
 
-.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__desc {
+.falcon-9-section-b__overview--carousel-container__carousel--item__desc {
 	margin-bottom: 1rem;
+}
+
+.falcon-9-section-b__overview--carousel-container__carousel--item__desc--title {
+	margin: 1.5rem 0;
 }
 
 @media screen and (max-width: 960px) {

@@ -1,9 +1,11 @@
 const firstSection = document.querySelector('section');
 const stats = document.querySelector('.falcon-9-section-b__stats');
 const statsTitle = document.querySelectorAll('.falcon-9-section-b__stats--item__title');
-const overviewCarouselList = document.querySelectorAll('.falcon-9-section-b__overview--carousel-1-container__carousel-1--item');
-const carousel_1_navLink_1 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__nav-menu-1--nav-item__nav-link')
-const carousel_1_content_1 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-1-container__carousel-1--item__content-1-container--content')
+const overviewCarouselList = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item');
+const carousel_1_navLink_1 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link.nav-menu-1__nav-item--nav-link')
+const carousel_1_navLink_2 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link.nav-menu-2__nav-item--nav-link')
+const carousel_1_content_1 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.content-1')
+const carousel_1_content_2 = document.querySelectorAll('.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.content-2')
 
 
 
@@ -68,3 +70,4 @@ function displayNavContent(navLinks, contents) {
 };
 
 displayNavContent(carousel_1_navLink_1, carousel_1_content_1);
+displayNavContent(carousel_1_navLink_2, carousel_1_content_2);
