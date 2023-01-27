@@ -30,7 +30,8 @@ section#falcon-9-section-a {
 
 .falcon-9-section-a__content--title,
 .falcon-9-section-b__stats--item__title,
-.falcon-9-section-b__overview--carousel-container__carousel--item__title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__title,
+.falcon-9-section-d__title {
 	font-size: calc(5rem + 3.08vw);
 	font-family: 'Familjen Grotesk';
 }
@@ -95,7 +96,11 @@ section#falcon-9-section-a {
 .falcon-9-section-b__stats--item__para,
 .falcon-9-section-b__about--text,
 .falcon-9-section-b__overview p,
-.falcon-9-section-b__overview--carousel-container__carousel--item__title {
+section#falcon-9-section-d p,
+.falcon-9-section-b__overview--carousel-container__carousel--item__title,
+.falcon-9-section-c__text-container--para,
+.falcon-9-section-c__text-container--title,
+.falcon-9-section-d__title {
 	opacity: 1;
 	color: white;
 	text-align: center;
@@ -158,43 +163,52 @@ section#falcon-9-section-a {
 	justify-content: center;
 }
 
-.falcon-9-section-b__overview p {
+.falcon-9-section-b__overview p,
+.falcon-9-section-c__text-container--para,
+section#falcon-9-section-d p {
 	text-align: initial;
 	font-size: 1.5rem;
 	line-height: 1.8;
 	font-weight: 500;
 }
 
-.falcon-9-section-b__overview--carousel-container span {
+.falcon-9-section-b__overview--carousel-container span, 
+.falcon-9-section-d__content-container--content__records--left__right span {
 	color: #868686;
 }
 
 .falcon-9-section-b__overview--carousel-container__carousel--item__para,
-.falcon-9-section-b__overview--carousel-container__carousel--item__desc--title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__desc--title,
+.falcon-9-section-d__para {
 	font-size: 1.8rem !important;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__title,
+.falcon-9-section-d__title {
 	text-align: initial;
 	font-size: 4.5rem;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item > * {
+.falcon-9-section-b__overview--carousel-container__carousel--item > *,
+.falcon-9-section-d-container > * {
 	max-width: 55rem;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__para--title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__para--title,
+.falcon-9-section-d__para--title {
 	margin-bottom: 2rem;
 }
 
 .falcon-9-section-b__overview--carousel-container__carousel--item__records--left__right p,
-.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right,
+.falcon-9-section-d__content-container--content__records--left__right {
 	font-size: 1.4rem;
 	font-weight: 600;
 }
 
 .falcon-9-section-b__overview--carousel-container__carousel--item__records--left__right,
-.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right,
+.falcon-9-section-d__content-container--content__records--left__right {
 	display: flex;
 	justify-content: space-between;
 	margin: 1.5rem 0;
@@ -226,30 +240,36 @@ hr {
 	border-top: 1px solid #525254;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content,
+.falcon-9-section-d__content-container--content {
 	display: none;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.show-content {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content.show-content,
+.falcon-9-section-d__content-container--content.show-content {
 	display: block;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu,
+.falcon-9-section-d--nav {
 	display: flex;
 	margin: 2rem 0 3rem;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item,
+.falcon-9-section-d--nav__nav-item {
 	padding: 0 1.2rem;
 	position: relative;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item:first-child {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item:first-child,
+.falcon-9-section-d--nav__nav-item:first-child {
 	padding-left: 0;
 }
 
 .falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::before,
-.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::after {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::after,
+.falcon-9-section-d--nav__nav-item:last-child::before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -259,7 +279,8 @@ hr {
 	background-color: #868686;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::before {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item#carousel-1__nav-item-1-2::before,
+.falcon-9-section-d--nav__nav-item:last-child::before {
 	left: -0.1rem;
 }
 
@@ -268,14 +289,18 @@ hr {
 }
 
 .falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:link,
-.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:visited {
+.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:visited,
+.falcon-9-section-d--nav__nav-item--nav-link:link,
+.falcon-9-section-d--nav__nav-item--nav-link:visited {
 	color: #868686;
 	font-size: 1.8rem;
 	/*font-weight: 600;*/
 }
 
 .active.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:link,
-.active.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:visited {
+.active.falcon-9-section-b__overview--carousel-container__carousel--item__nav-menu--nav-item__nav-link:visited,
+.active.falcon-9-section-d--nav__nav-item--nav-link:link,
+.active.falcon-9-section-d--nav__nav-item--nav-link:visited {
 	color: white;
 }
 
@@ -284,7 +309,8 @@ hr {
 }
 
 .falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records,
-.falcon-9-section-b__overview--carousel-container__carousel--item__records {
+.falcon-9-section-b__overview--carousel-container__carousel--item__records,
+.falcon-9-section-d__content-container--content__records {
 	margin-top: 2rem;
 }
 
@@ -292,7 +318,8 @@ hr {
 	margin-top: 5rem;
 }
 
-.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right {
+.falcon-9-section-b__overview--carousel-container__carousel--item__content-container--content__records--left__right,
+.falcon-9-section-d__content-container--content__records--left__right {
 	margin: 0.7rem 0;
 }
 
@@ -381,6 +408,38 @@ hr {
 	background-color: white;
 }
 
+.falcon-9-section-c__iframe-container {
+	/*height: 100%;*/
+	margin: 0 calc(var(--section-desktop-padding) * -1);
+	/*padding: 0 var(--section-desktop-padding);*/
+}
+
+.falcon-9-section-c__iframe-container iframe {
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.falcon-9-section-c__text-container {
+	position: absolute;
+	top: 80%;
+	left: var(--section-desktop-padding);
+	transform: translateY(-50px);
+	max-width: 50rem;
+	font-family: 'Familjen Grotesk';
+}
+
+.falcon-9-section-c__text-container--para {
+	font-size: 2rem;
+}
+
+section#falcon-9-section-d {
+	height: initial;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 90vh;
+}
+
 @media screen and (max-width: 960px) {
 	section {
 		padding: 0 var(--section-mobile-padding);
@@ -398,7 +457,8 @@ hr {
 	}
 
 	.falcon-9-section-b__about,
-	.falcon-9-section-b__overview {
+	.falcon-9-section-b__overview,
+	.falcon-9-section-c__iframe-container {
 		margin: 0 calc(var(--section-mobile-padding) * -1);
 	}
 
@@ -447,5 +507,9 @@ hr {
 
 	.falcon-9-section-b__overview--carousel-container__indicator-container {
 		display: none;
+	}
+
+	.falcon-9-section-c__text-container {
+		left: var(--section-mobile-padding);
 	}
 }
