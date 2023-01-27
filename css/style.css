@@ -266,7 +266,9 @@ section#section-d {
 .falcon-9-section-a__content--para,
 .falcon-9-section-b__stats--item__para,
 .falcon-9-section-b__about--text,
-.falcon-9-section-b__overview p {
+.falcon-9-section-b__overview p,
+.falcon-9-section-c__text-container--para,
+section#falcon-9-section-d p {
 	font-size: calc(1.6rem + 0.31vw);
 	/*font-weight: 500;*/
 	font-family: Barlow;
@@ -283,7 +285,9 @@ section#section-d {
 .section-d__content--heading,
 .falcon-9-section-a__content--title,
 .falcon-9-section-b__stats--item__title,
-.falcon-9-section-b__overview--carousel-container__carousel--item__title {
+.falcon-9-section-b__overview--carousel-container__carousel--item__title,
+.falcon-9-section-c__text-container--title,
+.falcon-9-section-d__title {
 	font-size: calc(3rem + 1.38vw);
 	font-family: Barlow;
 	position: relative;
