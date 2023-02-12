@@ -58,11 +58,18 @@ function alignCarouselItems(list) {
 	});
 };
 
+let pos1 = 0;
+let pos2 = 0;
+
 alignCarouselItems(overviewCarouselList);
 alignCarouselItems(sectionECarouselList);
 
-let pos1 = 0;
-let pos2 = 0;
+window.addEventListener('resize', function() {
+	alignCarouselItems(overviewCarouselList);
+	alignCarouselItems(sectionECarouselList);
+	moveCarouselItems(pos1, overviewCarousel, overviewCarouselBtns, overviewCarouselIndicators);
+	moveCarouselItems(pos2, sectionECarousel, SectionECarouselBtns);
+});
 
 function moveCarouselItems(pos, carousel, btns, indicators=null) {
 	btns.forEach(btn => btn.classList.remove('disabled'));
@@ -73,8 +80,6 @@ function moveCarouselItems(pos, carousel, btns, indicators=null) {
 	} else if (pos === carousel.children.length - 1) {
 		btns[1].classList.add('disabled')
 	}
-	console.log('hello')
-	console.log(indicators);
 	if (indicators === null) return;
 	indicators.forEach(function(indicator) {
 		indicator.classList.remove('active');
