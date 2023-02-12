@@ -268,7 +268,8 @@ section#section-d {
 .falcon-9-section-b__about--text,
 .falcon-9-section-b__overview p,
 .falcon-9-section-c__text-container--para,
-section#falcon-9-section-d p {
+section#falcon-9-section-d p,
+.falcon-9-section-e__carousel-container--carousel__item--desc--para {
 	font-size: calc(1.6rem + 0.31vw);
 	/*font-weight: 500;*/
 	font-family: Barlow;
